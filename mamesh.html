@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mamesh — Sportprojekt</title><link rel="stylesheet" href="style.css">
+<style>
+.mamesh-hero{min-height:78svh;background:radial-gradient(circle at 20% 30%,#3b1833,#07101d 55%,#03060b);color:#fff;display:grid;place-items:center;text-align:center;padding:130px 20px 70px;position:relative;overflow:hidden}
+.mamesh-hero:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(120deg,transparent 0 40px,rgba(255,255,255,.025) 41px 42px)}
+.mamesh-content{position:relative;max-width:900px}.mamesh-content h1{font-size:clamp(4rem,12vw,9rem);letter-spacing:-.08em;line-height:.85}.mamesh-content h1 span{color:#ff7a55}.mamesh-content p{margin:25px auto;max-width:650px;color:#aebbd0;font-size:1.15rem}
+.mamesh-banner{background:#050b13;padding:18px 0;overflow:hidden}.mamesh-banner .marquee-track{animation-duration:35s}
+.about{width:min(1050px,calc(100% - 32px));margin:auto;padding:100px 0}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.about-card{padding:30px;border-radius:25px;background:#fff;border:1px solid var(--line);box-shadow:0 15px 50px rgba(9,19,33,.07)}.about-card.dark{background:#0a1421;color:#fff;border-color:#ffffff12}.about-card h2{font-size:2rem;line-height:1;margin-bottom:14px}.about-card p{color:var(--muted)}.about-card.dark p{color:#93a4b9}.back{display:inline-flex;margin-top:25px;padding:12px 18px;border-radius:999px;background:#fff;color:#07101d;text-decoration:none;font-weight:900}
+@media(max-width:700px){.about-grid{grid-template-columns:1fr}}
+.mamesh-video{background:#050b13;color:#fff;padding:100px max(18px,calc((100% - 1050px)/2));}.mamesh-video h2{font-size:clamp(3.4rem,8vw,7rem);line-height:.86;letter-spacing:-.08em;margin:18px 0 38px}.mamesh-video h2 span{color:#ff7957}.mamesh-video-grid{display:grid;grid-template-columns:1.3fr .9fr;gap:18px}.mamesh-video-grid video{width:100%;display:block;aspect-ratio:16/9;object-fit:cover;border-radius:22px;background:#000;box-shadow:0 30px 80px rgba(0,0,0,.35)}@media(max-width:700px){.mamesh-video-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="site-header"><a class="brand" href="project.html"><span>SPORT</span><b>M</b></a><a class="btn btn-ghost" href="project.html" style="margin-left:auto;color:#fff">← Zurück</a></header>
+<section class="mamesh-hero">
+<div class="mamesh-content"><div class="eyebrow">MAMESH • DEUTSCHPROJEKT</div><h1><span>Mamesh</span><br>Sport Edition</h1><p>Eine neue Startseite für das Projekt: mehr Sportarten, mehr Bewegung und eine interaktive Präsentation auf Deutsch.</p><a class="back" href="project.html">Projekt öffnen ↗</a></div>
+</section>
+<section class="mamesh-banner"><div class="marquee"><div class="marquee-track" id="mTrack"></div></div></section>
+<section class="mamesh-video"><div class="eyebrow">SPORTVIDEOS • MAMESH EDITION</div><h2>Die Sportwelt<br><span>in Bewegung.</span></h2><div class="mamesh-video-grid"><video controls playsinline preload="metadata" poster="assets/football.jpg"><source src="assets/videos/sportwelt-montage.mp4" type="video/mp4"></video><video controls playsinline preload="metadata" poster="assets/basketball.jpg"><source src="assets/videos/sportwelt-fastcut.mp4" type="video/mp4"></video></div></section>
+<section class="cinematic-banner" style="padding-top:0"><div class="cinematic-video"><video autoplay muted loop playsinline poster="assets/football.jpg"><source src="assets/videos/sport-hero-banner.mp4" type="video/mp4"></video><div class="cinematic-shade"></div><div class="cinematic-copy"><div class="eyebrow">MAMESH • SPORT EDITION</div><h2>Alle Sportarten.<br><span>Alle Clips.</span></h2><p>Ein großer Trainings-Banner für die gesamte Sportseite.</p><a class="btn btn-primary" href="project.html#training">Trainingsvideos öffnen ↘</a></div></div></section>
+
+<section class="about">
+<div class="eyebrow dark">DAS PROJEKT</div><h2 style="font-size:clamp(3rem,7vw,6rem);line-height:.9;letter-spacing:-.07em;margin:18px 0 40px">Sport, Sprache<br><span style="color:var(--accent)">und Bewegung.</span></h2>
+<div class="about-grid">
+<article class="about-card dark"><h2>Was ist neu?</h2><p>Die Seite enthält jetzt zwölf Sportarten, eine Sport-Navigation, einen bewegten Bild-Banner, interaktive Wortschatzkarten und ein modernes responsives Layout.</p></article>
+<article class="about-card"><h2>Warum Sport?</h2><p>Sport ist ein einfaches Thema, um deutsche Wörter, kurze Fakten und Beschreibungen zu lernen. Jede Sektion verbindet Bild und Text.</p></article>
+<article class="about-card"><h2>Interaktion</h2><p>Scroll-Animationen, 3D-Bildbewegungen, Text-Scramble, ein animierter Hintergrund und ein pausierbarer Sport-Banner machen die Präsentation lebendig.</p></article>
+<article class="about-card dark"><h2>Idee</h2><p>Die Seite wurde als kleines digitales Sportmagazin gedacht: klar, schnell, modern und für Computer, Tablet und Smartphone angepasst.</p></article>
+</div>
+<a class="back" href="project.html#wortschatz">Zum Wortschatz →</a>
+</section>
+<footer><div><b>MAMESH</b><span>German Sport Project</span></div><a href="project.html">Startseite ↗</a></footer>
+<script>
+const sports=[
+["Basketball","basketball.jpg"],["Schwimmen","swimming.webp"],["Fußball","football.jpg"],["Laufen","running.jpg"],["Tennis","tennis.jpg"],["Radfahren","cycling.jpg"],["Volleyball","volleyball.jpg"],["Boxen","boxing.svg"],["Handball","handball.svg"],["Turnen","gymnastics.svg"],["Tischtennis","table-tennis.svg"],["Leichtathletik","athletics.svg"]];
+const track=document.querySelector('#mTrack');const cards=sports.map(s=>`<a class="mini-card" href="project.html#${s[0].toLowerCase().replaceAll('ü','u').replaceAll('ä','a').replaceAll('ö','o').replaceAll('ß','ss').replaceAll(' ','')}"><img src="assets/${s[1]}" alt="${s[0]}"><span>${s[0]}</span></a>`).join('');track.innerHTML=cards+cards;
+</script>
+</body></html>

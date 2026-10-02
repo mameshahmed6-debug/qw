@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Interaktive deutsche Sport-Webseite mit dreizehn Sportarten.">
+<title>Sportwelt — German Project</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=sport-media-2">
+</head>
+<body>
+<div class="cursor-glow"></div><div id="progress"></div>
+<header class="site-header" id="bar">
+  <a class="brand" href="#home"><span>SPORT</span><b>13</b></a>
+  <button class="burger" id="burger" aria-label="Menü öffnen" aria-expanded="false"><span></span><span></span><span></span></button>
+  <nav id="menu" aria-label="Sportnavigation">
+    <a href="#basketball">Basketball</a><a href="#schwimmen">Schwimmen</a><a href="#fussball">Fußball</a><a href="#laufen">Laufen</a><a href="#tennis">Tennis</a><a href="#radfahren">Radfahren</a><a href="#volleyball">Volleyball</a><a href="#boxen">Boxen</a><a href="#mma">MMA</a><a href="#handball">Handball</a><a href="#turnen">Turnen</a><a href="#tischtennis">Tischtennis</a><a href="#leichtathletik">Leichtathletik</a>
+  </nav>
+</header>
+<main>
+<section id="home" class="hero">
+  <canvas id="fx" aria-hidden="true"></canvas><div class="hero-grid"></div>
+  <div class="hero-copy"><div class="eyebrow"><span></span> DEUTSCHES SPORTPROJEKT <span></span></div>
+  <h1><span>Sport</span><em>bewegt</em><strong>die Welt.</strong></h1>
+  <p>Dreizehn Sportarten. Ein Projekt. Eine interaktive Reise durch Bewegung, Teamgeist und Leidenschaft.</p>
+  <div class="hero-actions"><a class="btn btn-primary magnetic" href="#mega-banner">Entdecken <span>↘</span></a></div></div>
+  <div class="hero-stats"><div><b>13</b><span>Sportarten</span></div><div><b>13</b><span>Videos</span></div><div><b>∞</b><span>Bewegung</span></div></div><div class="scroll-cue">SCROLL <i></i></div>
+</section>
+<section id="banner" class="cinematic-banner">
+  <div class="cinematic-video"><video autoplay muted loop playsinline poster="assets/football.jpg"><source src="assets/sport-hero-banner.mp4" type="video/mp4"></video><div class="cinematic-shade"></div>
+    <div class="cinematic-copy"><div class="eyebrow">13 SPORTARTEN • EIN PROJEKT</div><h2>Bewegung wird<br><span>Geschichte.</span></h2><p>Ein großer Sport-Banner mit allen Bildern deines Projekts.</p><a class="btn btn-primary" href="#training">Trainingsvideos entdecken ↘</a></div>
+  </div>
+</section>
+<section id="banner-mini" class="sport-banner"><div class="marquee"><div class="marquee-track" id="marqueeTrack"></div></div></section>
+<section class="daily-training" id="daily-training">
+  <div class="daily-header"><div class="eyebrow dark">TRAINING DES TAGES</div><h2>Basketball-Dribbling<br><span>für mehr Tempo und Kontrolle.</span></h2></div>
+  <div class="daily-card">
+    <div class="daily-video-wrap">
+      <video controls muted loop playsinline preload="metadata" poster="assets/basketball.jpg"><source src="https://videos.pexels.com/video-files/5390845/5390845-uhd_2732_1440_30fps.mp4" type="video/mp4"></video>
+    </div>
+    <div class="daily-copy">
+      <span class="daily-badge">Heute</span>
+      <h3>Basketball-Dribbling</h3>
+      <p>Das Training fokussiert sich auf schnelle Ballkontrolle, präzises Führen, schnelle Richtungswechsel und bessere Fußarbeit im Sprint.</p>
+      <ul>
+        <li><strong>Dauer:</strong> <span id="dailyDuration">00:08</span></li>
+        <li><strong>Schwierigkeitsgrad:</strong> Mittel</li>
+        <li><strong>Fokus:</strong> Tempo, Balance, Technik</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section class="training" id="training">
+  <div class="training-head"><div><p class="eyebrow dark">TRAININGSVIDEOS</p><h2>Jede Sportart.<br><span>Ein eigener Clip.</span></h2></div><p>Jede Sportart hat jetzt einen eigenen kurzen Clip mit deinem Bild und passenden deutschen Trainingsbegriffen.</p></div>
+  <div class="video-grid" id="videoGrid"></div>
+</section>
+<section class="sports-wall" id="sports-wall">
+    <div class="sports-wall-head"><div class="eyebrow dark">SPORTVIDEO-WALL</div><h2>13 Sportarten.<br><span>Ein komplett gefüllter Bereich.</span></h2></div>
+  <div class="video-grid wall-grid" id="sportVideoWall"></div>
+</section>
+<section class="mega-banner" id="mega-banner" aria-label="Großer Sportbanner">
+  <div class="mega-grid">
+    <div class="mega-tile mega-tall"><img src="assets/football.jpg" alt="Fußball" loading="lazy"></div>
+    <div class="mega-tile"><img src="assets/basketball.jpg" alt="Basketball" loading="lazy"></div>
+    <div class="mega-tile"><img src="assets/swimming.webp" alt="Schwimmen" loading="lazy"></div>
+    <div class="mega-tile"><img src="assets/running.jpg" alt="Laufen" loading="lazy"></div>
+    <div class="mega-tile"><img src="assets/tennis.jpg" alt="Tennis" loading="lazy"></div>
+    <div class="mega-tile mega-wide"><img src="assets/cycling.jpg" alt="Radfahren" loading="lazy"></div>
+    <div class="mega-tile"><img src="assets/volleyball.jpg" alt="Volleyball" loading="lazy"></div>
+    <div class="mega-tile"><img src="assets/boxing.jpg" alt="Boxen" loading="lazy"></div>
+    <div class="mega-tile"><img src="assets/mma.jpg" alt="MMA" loading="lazy"></div>
+  </div><div class="mega-overlay"></div><div class="mega-copy"><div class="eyebrow">13 SPORTARTEN • EIN PROJEKT</div><h2>Sport kennt<br><span>keine Grenzen.</span></h2><p>Bewegung, Energie, Teamgeist und Leidenschaft — alles in einem großen visuellen Sportbanner.</p><a class="btn btn-primary" href="#videos">Videos ansehen <span>↓</span></a></div>
+</section>
+<section class="video-section" id="videos"><div class="video-head"><div><div class="eyebrow dark">SPORTVIDEOS</div><h2>Bewegung in <span>Action.</span></h2></div><p>Echte Spiel- und Trainingsaufnahmen von Sportlern. Die Clips stammen aus frei nutzbaren Videoquellen.</p></div>
+<div class="video-grid"><article class="video-card video-feature"><div class="video-wrap"><video controls playsinline preload="metadata" poster="assets/football.jpg"><source src="https://videos.pexels.com/video-files/6077723/6077723-uhd_2560_1440_25fps.mp4" type="video/mp4"></video><div class="video-label">FUSSBALL • PEXELS</div></div><div class="video-info"><span>01</span><h3>Fußball-Spielszene</h3><p>Spieler bewegen den Ball über das Feld und arbeiten zusammen.</p><a class="video-credit" href="https://www.pexels.com/video/people-playing-football-6077723/" target="_blank" rel="noopener noreferrer">Clip: Pexels</a></div></article>
+<article class="video-card"><div class="video-wrap"><video controls playsinline preload="metadata" poster="assets/basketball.jpg"><source src="https://videos.pexels.com/video-files/5390845/5390845-uhd_2732_1440_30fps.mp4" type="video/mp4"></video><div class="video-label">BASKETBALL • PEXELS</div></div><div class="video-info"><span>02</span><h3>Basketball-Dribbling</h3><p>Spieler dribbeln und verteidigen auf dem Basketballfeld.</p><a class="video-credit" href="https://www.pexels.com/video/men-playing-basketball-5390845/" target="_blank" rel="noopener noreferrer">Clip: Pexels</a></div></article></div></section>
+<section class="intro" id="sports"><p class="eyebrow dark">SPORTWELT</p><h2>Von Teamgeist bis <span>Ausdauer.</span></h2><p>Sport verbindet Menschen. Entdecke klassische Sportarten und neue Bereiche in einer Seite, die mit Bewegung auf deine Interaktion reagiert.</p></section>
+<div id="sportSections"></div>
+</main><footer><div><b>SPORTWELT</b><span>German Project • NMS</span></div></footer>
+<script src="Script.js"></script>
+</body></html>
